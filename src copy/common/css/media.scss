@@ -1,0 +1,69 @@
+@media screen and (max-width: 961px) {
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    color: #666;
+    min-width: 960px;
+    min-height: 500px;
+  }
+  .saveForm {
+    .el-form-item {
+      margin: 0;
+      display: flex;
+      width: 33.333%;
+      justify-content: center;
+      margin: 10px 0;
+    }
+  }
+  .page {
+    .card2 {
+      width: calc(33.3% - 4px) !important;
+      .el-form-item {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 8px 0 8px 0;
+        flex-shrink: 1;
+      }
+    }
+  }
+  .el-autocomplete-suggestion__wrap {
+    max-height: 160px !important;
+  }
+  .el-scrollbar__wrap {
+    max-height: 160px !important;
+  }
+  .page {
+    .pagecontent {
+      overflow: scroll;
+      .saveForm {
+        flex-shrink: 0;
+      }
+    }
+    .el-table {
+      flex-shrink: 0;
+      min-height: 300px;
+    }
+  }
+}
+@media screen and (min-height: 1606px) {
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    color: #666;
+    min-width: 1440px;
+    min-height: 500px;
+  }
+  .saveForm {
+    .el-form-item {
+      margin: 0;
+      display: flex;
+      width: 20%;
+      justify-content: center;
+      margin: 10px 0;
+    }
+  }
+}

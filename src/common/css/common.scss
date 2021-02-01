@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-overflow-scrolling: touch;
+}
+body,
+html {
+  height: 100%;
+  color: #666;
+}
+//设置滚动条--------------------------------------
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+//左侧容器顶部公司名称-----------------------------
+.lySoft {
+  height: 50px;
+  width: 100%;
+  background-color: #252a2e;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.dropdownBox {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #252a2e;
+  line-height: 50px !important;
+  .el-dropdown {
+    color: white;
+    line-height: 50px !important;
+  }
+}
+//选项卡容器-------------------------------------
+#selectMenu {
+  height: calc(100% - 100px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#selectMenu::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(84, 92, 100);
+}
+#selectMenu::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #bbb;
+}
+
+//页面组件
+.page {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 666;
+  .pagecontent {
+    width: 100%;
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    z-index: 666;
+  }
+  .pageContent {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .saveForm {
+    flex-shrink: 0;
+    min-height: 45px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .saveForm2 {
+    flex-shrink: 0;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+  }
+  .card {
+    box-shadow: 0 0 5px #e5e5e5;
+    width: calc(100% - 6px) !important;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    .el-form-item {
+      flex-shrink: 0;
+      .el-form-item__label {
+        flex-shrink: 0;
+      }
+    }
+  }
+  .fixedTable {
+    position: absolute;
+    bottom: -400px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 15px #ccc;
+    // background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 666;
+    display: none;
+    .card {
+      width: 100% !important;
+    }
+  }
+  .card2 {
+    box-shadow: 0 0 5px #e5e5e5;
+    width: calc(25% - 4px) !important;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-left: 3px;
+    box-sizing: border-box;
+    height: 240px;
+    flex-shrink: 0;
+    .el-form-item {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 8px 0 8px 0;
+      flex-shrink: 0;
+    }
+  }
+  .card:hover,
+  .card2:hover {
+    box-shadow: 0px 0px 5px #4382df;
+  }
+  .bottomBtn-right {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .headerBtn {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    flex-shrink: 0;
+  }
+}
